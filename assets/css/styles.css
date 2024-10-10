@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url('../img/dccl--html-css-simple-feature-section/Background_image.svg');
+    background-color: #121826;
+}
+
+.header {
+    width: 100%;
+    height: 30%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+.header__title {
+    width: 30%;
+
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #E5E7EB;
+}
+
+.header__subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #9DA3AE;
+}
+
+.main {
+    width: 100%;
+    height: 70%;
+}
+
+.main__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container__card {
+    background: #212936;
+    
+    width: 400px;
+    height: 800px;
+
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 20px;
+
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.card__icon {
+    border-radius: 100%;
+
+    width: 60px;
+    height: 60px;
+    font-size: 1.7rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.yellow {
+    background-color: #FCEED8;
+}
+
+.blue {
+    background-color: #DEE9FC;
+}
+
+.pink {
+    background-color: #FBE5E6;
+}
