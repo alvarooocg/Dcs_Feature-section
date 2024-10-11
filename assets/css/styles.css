@@ -13,7 +13,7 @@ body {
     width: 100vw;
     height: 100vh;
 
-    background-image: url('../img/dccl--html-css-simple-feature-section/Background_image.svg');
+    background: url('../img/dccl--html-css-simple-feature-section/Background_image.svg');
     background-color: #121826;
 }
 
@@ -52,23 +52,25 @@ body {
 .main__container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 50px;
+
+    padding: 0 150px;
 }
 
 .container__card {
     background: #212936;
     
-    width: 400px;
-    height: 800px;
+    width: 320px;
+    height: auto;
 
     display: flex;
     flex-direction: column;
     
     border-radius: 20px;
 
-    padding-top: 30px;
-    padding-left: 30px;
+    padding: 30px;
 }
 
 .card__icon {
@@ -81,6 +83,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    gap: 50px;
 }
 
 .yellow {
@@ -93,4 +97,54 @@ body {
 
 .pink {
     background-color: #FBE5E6;
+}
+
+.card__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #E5E7EB;
+
+    padding: 20px 0;
+}
+
+.card__text {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #9DA3AE;
+}
+
+.card__img {
+    width: 250px;
+    margin-top: 20px;
+
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .header {
+        margin-top: 30px;
+    }
+
+    .header__title {
+        width: 40%;
+    }
+
+    .header__subtitle {
+        padding-top: 10px;
+    }
+
+    .main__container {
+        flex-wrap: wrap;
+
+        padding-top: 30px;
+        padding-bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    
+    .header__title {
+        width: 70%;
+    }
 }
